@@ -23,5 +23,5 @@ func init() {
 }
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	app.ServeHttp(w, r)
+	app.ServeHTTP(w, r)
 }
