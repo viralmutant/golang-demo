@@ -11,7 +11,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
     server := New()
 
     // Define the handler for the path "/"
-    server.get("/", func(ctx *Context) {
+    server.Get("/", func(ctx *Context) {
         // Send a JSON response
         ctx.JSON(http.StatusOK, H{
             "message": "Hello from Mittal",
